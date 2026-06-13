@@ -1,77 +1,54 @@
 # Página: Red Básica (Cisco Packet Tracer)
 
-Repositorio con una página estática que explica y muestra una topología básica creada en Cisco Packet Tracer. Incluye las páginas HTML, estilos CSS, capturas de pantalla y un video final.
+## Descripción del proyecto
 
-## Estructura del proyecto
+Esta es una página web educativa creada para explicar una red básica construida en Cisco Packet Tracer. El sitio describe la topología, los dispositivos usados y el flujo de datos entre elementos de red como routers, switches y equipos finales.
 
-- `index.html` — Página principal
-- `styles.css` — Estilos globales
-- `scripts.js` — Comportamientos compartidos (scroll, lightbox, etc.)
-- `packet-tracer.html`, `red-basica.html`, `router-2911.html`, `switch-2960.html`, `pc-laptop.html`, `crear-red.html` — Subpáginas
-- `Video/` — Carpeta para el video final (agregar tu archivo de video aquí)
-- `Capturas/` — Carpeta para capturas de pantalla
-- `push_repo.bat`, `push_repo.sh` — Scripts para inicializar y subir/sincronizar con GitHub
-- `sync_repo.bat`, `sync_repo.sh` — Scripts para sincronizar con el remoto
-- `.gitattributes` — Configura Git LFS para archivos multimedia
+El contenido está diseñado para estudiantes de redes que necesitan visualizar y comprender paso a paso cómo se arma una red básica en un entorno de simulación.
 
-## Cómo ver el sitio localmente
+## Qué incluye
 
-La forma más simple es abrir `index.html` en tu navegador. Para servirlo mediante un servidor local (recomendado si usas rutas relativas):
+- `index.html` — Página principal con introducción general y enlaces a las subpáginas.
+- `crear-red.html` — Guía paso a paso del proceso de creación de la red.
+- `red-basica.html` — Explicación de la topología general y sus conexiones.
+- `router-2911.html` — Descripción del router Cisco 2911 y su configuración básica.
+- `switch-2960.html` — Detalles del switch Cisco 2960 y su papel en la red.
+- `pc-laptop.html` — Información sobre los equipos finales (PC y laptop) y su comunicación.
+- `packet-tracer.html` — Página dedicada a la simulación en Cisco Packet Tracer y capturas del diseño.
+- `styles.css` — Estilos visuales para todo el sitio.
+- `scripts.js` — Funciones interactivas compartidas entre las páginas.
+- `Capturas/` — Carpeta para imágenes de la red y diagramas.
+- `Video/` — Carpeta para el video que muestra la presentación o el funcionamiento de la red.
 
-Python 3 (desde la raíz del proyecto):
+## Objetivo
 
-```bash
-python -m http.server 8000
-# Abrir http://localhost:8000
-```
+El objetivo principal es facilitar la comprensión de una red simple entre estudiantes de redes. La página presenta:
 
-## Subir el proyecto a GitHub (recomendado en tu máquina)
+- la estructura física y lógica de la red,
+- los componentes principales,
+- la relación entre routers, switches y dispositivos finales,
+- material visual que complementa las explicaciones.
 
-He incluido scripts que automatizan los pasos comunes. No compartas tokens en chats públicos; usa `gh auth login` o `gh` para autenticar de forma segura.
+## Cómo usarlo
 
-Windows (PowerShell):
+1. Abre `index.html` en tu navegador.
+2. Navega por las secciones para entender cada parte de la red.
+3. Consulta las páginas dedicadas a routers, switches y PC/laptops para ver las características de cada dispositivo.
+4. Revisa las capturas y el video para ver la topología en Cisco Packet Tracer.
 
-```powershell
-gh auth login
-git lfs install
-.\sync_repo.bat   # o .\push_repo.bat para inicializar y subir
-```
+## Buenas prácticas
 
-Linux/macOS:
-
-```bash
-gh auth login
-git lfs install
-./sync_repo.sh    # o ./push_repo.sh
-```
-
-Si tu video supera 100 MB usa Git LFS (los archivos `Video/*` y `Capturas/*` están listados en `.gitattributes`). Comandos útiles:
-
-```bash
-git lfs install
-git lfs track "Video/*"
-git lfs track "Capturas/*"
-git add .gitattributes
-git add Video/* Capturas/*
-git commit -m "Agregar medios con LFS"
-git push origin main
-```
-
-### Si usas token en local (menos recomendable)
-
-```bash
-git remote add origin https://<TOKEN>@github.com/KevinJoelZ/Pagina-Red-Basica.git
-git push -u origin main
-```
-
-Reemplaza `<TOKEN>` por tu token en tu equipo local únicamente; si el token llegó a compartirse públicamente, revócalo inmediatamente en https://github.com/settings/tokens.
+- Mantén los archivos en la misma carpeta para que las rutas relativas funcionen.
+- Si vas a editar la página, haz cambios pequeños y prueba en el navegador.
+- Agrega contenido visual en `Capturas/` y `Video/` si quieres mostrar más ejemplos.
 
 ## Contribuciones
 
-Si deseas mejorar la página:
+Si deseas mejorar el contenido del sitio:
 
-- Abre un issue o un pull request en el repositorio.
-- Mantén los cambios pequeños y explícales en el mensaje de commit.
+- Modifica el contenido de las páginas HTML.
+- Ajusta los estilos en `styles.css` o la interacción en `scripts.js`.
+- Comenta tus cambios en el mensaje de commit.
 
 ## Licencia y créditos
 
@@ -79,4 +56,4 @@ Proyecto educativo. Atribuye el contenido a Tecnólogo Kevin Zapata si lo reutil
 
 ---
 
-Si quieres que adapte el README (más detallado, con capturas embebidas o un índice), dime qué sección quieres ampliar y lo actualizo.
+Si quieres, puedo añadir un índice con enlaces a cada página o incluir ejemplos de capturas en el README.
