@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo Crear - Red Básica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Cómo Crear</p>
+      <h1 class="hero__title">Guía para crear la red básica</h1>
+      <p class="hero__subtitle">Sigue los pasos para construir la topología con Router 2911, Switch 2960, PC y laptop en Cisco Packet Tracer, y aprende a configurar las conexiones iniciales.</p>
+      <a class="button" href="index.html">Volver a la página principal</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Pasos para armar la topología</h2>
+        <p>Para construir la red básica debes seguir una secuencia clara que incluya selección de dispositivos, conexiones físicas y configuración de las direcciones IP.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Topología física:</strong> disposición de los dispositivos y los cables en el área de trabajo.</li>
+          <li><strong>Tipos de cable:</strong> cobre directo para conectar PCs y switch, y cable cruzado cuando se conecta un router a otro router o equipo similar.</li>
+          <li><strong>Puerta de enlace:</strong> dirección IP del router que permite a los hosts salir de su subred.</li>
+        </ul>
+        <div class="topic-card">
+          <h3>Paso 1: Añadir los dispositivos</h3>
+          <p>Agrega un Router 2911, un Switch 2960, una PC y una Laptop desde la barra de dispositivos en Packet Tracer.</p>
+        </div>
+        <div class="topic-card">
+          <h3>Paso 2: Conectar el router al switch</h3>
+          <p>Usa un cable de cobre directo para conectar la interfaz del Router 2911 a un puerto Ethernet del Switch 2960. Esta conexión permite que el switch distribuya tráfico hacia el router.</p>
+        </div>
+        <div class="topic-card">
+          <h3>Paso 3: Conectar los equipos finales</h3>
+          <p>Conecta la PC y la laptop a puertos libres del Switch 2960. El switch aprenderá las direcciones MAC y enviará el tráfico correctamente.</p>
+        </div>
+        <div class="topic-card">
+          <h3>Paso 4: Configurar direcciones IP</h3>
+          <p>Asigna direcciones IP a la PC y la laptop en la misma subred, por ejemplo 192.168.1.10 y 192.168.1.11, con máscara 255.255.255.0. Configura la interfaz del router con 192.168.1.1 como la puerta de enlace.</p>
+        </div>
+        <p>Con esto, tendrás una red básica funcional que te permitirá practicar comandos de red, verificar la conectividad y revisar cómo se envían los datos entre dispositivos.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

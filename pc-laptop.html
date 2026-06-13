@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC y Laptop - Red Básica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">PC y Laptop</p>
+      <h1 class="hero__title">Configurar los equipos finales</h1>
+      <p class="hero__subtitle">La PC y la laptop deben tener direcciones IP en la misma subred para comunicarse correctamente. Aprende a asignar IP y probar la conexión en Packet Tracer.</p>
+      <a class="button" href="index.html">Volver a la página principal</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Asignación de direcciones IP</h2>
+        <p>La PC y la laptop son los dispositivos finales de la red. Para comunicarse correctamente, cada uno debe tener una dirección IP única en la misma subred y apuntar a la puerta de enlace correcta.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Dirección IP:</strong> identificador lógico que permite ubicar el dispositivo en la red.</li>
+          <li><strong>Máscara de subred:</strong> define qué parte de la IP corresponde a la red y qué parte a los hosts.</li>
+          <li><strong>Puerta de enlace predeterminada:</strong> dirección IP del router que se usa para salir de la red local.</li>
+        </ul>
+        <p>Ejemplo de configuración:</p>
+        <ul>
+          <li>PC: 192.168.1.10 / 255.255.255.0 / gateway 192.168.1.1</li>
+          <li>Laptop: 192.168.1.11 / 255.255.255.0 / gateway 192.168.1.1</li>
+        </ul>
+        <p>Después de configurar, usa la herramienta de simulación o el comando <code>ping</code> para verificar conectividad entre la PC, la laptop y el router.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

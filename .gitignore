@@ -1,0 +1,16 @@
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Node (si aplica)
+node_modules/
+
+# Evitar subir credenciales
+.env
+
+# No ignorar carpetas de medios (Video, Capturas) porque queremos subirlas
+# Asegúrate de usar Git LFS si son grandes

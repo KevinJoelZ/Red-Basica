@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch 2960 - Red Básica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Switch 2960</p>
+      <h1 class="hero__title">Función del switch en la topología</h1>
+      <p class="hero__subtitle">El Switch 2960 conecta los dispositivos finales como PC y laptop y distribuye el tráfico de datos dentro de la red local. En Packet Tracer, el switch trabaja como conmutador de capa 2.</p>
+      <a class="button" href="index.html">Volver a la página principal</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Cómo conectar el switch</h2>
+        <p>El Switch 2960 actúa como el centro de conmutación de la LAN. Su función principal es recibir tramas y reenviarlas al puerto correcto según la dirección MAC de destino.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Tabla MAC:</strong> lista que el switch construye para saber en qué puerto está cada dirección MAC.</li>
+          <li><strong>VLAN:</strong> red virtual que permite segmentar el tráfico dentro de un mismo switch.</li>
+          <li><strong>Dominio de colisión:</strong> área de la red donde los paquetes pueden chocar, reducida por el uso de switches.</li>
+        </ul>
+        <p>Para conectar el switch:</p>
+        <ul>
+          <li>Usa cable de cobre directo entre el router y un puerto del switch.</li>
+          <li>Conecta la PC y la laptop a otros puertos del switch.</li>
+          <li>Verifica que el switch detecte las conexiones y que los puertos estén activos.</li>
+        </ul>
+        <p>Esto te ayuda a entender cómo el switch distribuye el tráfico interno antes de que el router lo enrute fuera de la LAN.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

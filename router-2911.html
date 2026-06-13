@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Router 2911 - Red Básica</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Router 2911</p>
+      <h1 class="hero__title">Rol del router en la red básica</h1>
+      <p class="hero__subtitle">El Router 2911 dirige el tráfico entre segmentos de red y permite la conexión de dispositivos a diferentes subredes. En Packet Tracer, es el elemento central para configurar la interfaz y el enrutamiento.</p>
+      <a class="button" href="index.html">Volver a la página principal</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Configuración inicial del Router</h2>
+        <p>El Router 2911 actúa como el punto de salida de la red local y la puerta de enlace para los hosts. Su configuración inicial implica habilitar interfaces y asignar direcciones IP.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Interfaz:</strong> puerto del router donde se conecta un cable y se configura una dirección IP.</li>
+          <li><strong>IP de gateway:</strong> dirección utilizada por los hosts para enviar tráfico fuera de su subred.</li>
+          <li><strong>CLI:</strong> línea de comandos de Cisco IOS usada para configurar el router.</li>
+        </ul>
+        <p>Ejemplo de comandos básicos en la CLI:</p>
+        <pre>
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+</pre>
+        <p>Después de aplicar estos comandos, el router tendrá la interfaz activa y podrá enrutar paquetes hacia los hosts conectados al switch.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Básica - Cisco Packet Tracer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Red Básica</p>
+      <h1 class="hero__title">Qué es una red básica en Packet Tracer</h1>
+      <p class="hero__subtitle">Una red básica conecta dispositivos como routers, switches y equipos finales para permitir el intercambio de datos. Aprende los elementos principales y la lógica de diseño de esta topología.</p>
+      <a class="button" href="index.html">Volver a la página principal</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Componentes de una red simple</h2>
+        <p>En una red básica encontramos un router, un switch y dispositivos finales como una PC y una laptop. Estos componentes trabajan juntos para enrutar y conmutar paquetes dentro de una misma subred.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Router:</strong> dispositivo que conecta redes diferentes y toma decisiones de encaminamiento.</li>
+          <li><strong>Switch:</strong> conmutador de capa 2 que envía tramas a partir de direcciones MAC dentro de la LAN.</li>
+          <li><strong>Host:</strong> equipo final, como una PC o laptop, que envía y recibe datos.</li>
+          <li><strong>Subred:</strong> segmento de red definido por una máscara de subred y un rango de direcciones IP.</li>
+        </ul>
+        <p>La red básica también permite estudiar cómo se asignan direcciones IP y cómo los paquetes se mueven entre dispositivos con ayuda del switch y del router.</p>
+        <p>En Cisco Packet Tracer, esta topología es útil para practicar conexiones físicas, configuración de interfaces y pruebas de conectividad.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

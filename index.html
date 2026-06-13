@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Básica en Cisco Packet Tracer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
+        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
+        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
+        <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Red Básica en Cisco Packet Tracer</p>
+      <h1 class="hero__title">Diseño de una red simple con Router 2911, Switch 2960, PC y Laptop</h1>
+      <p class="hero__subtitle">Esta página explica qué es Cisco Packet Tracer, en qué consiste una red básica y cómo construir una topología básica en el simulador.</p>
+      <div class="hero__summary">
+        <div class="hero__summary-card"><strong>1.</strong> Qué es Packet Tracer</div>
+        <div class="hero__summary-card"><strong>2.</strong> Concepto de red básica</div>
+        <div class="hero__summary-card"><strong>3.</strong> Crear red con Router 2911 y Switch 2960</div>
+      </div>
+      <a class="button" href="#packet-tracer">Ir a los temas</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--intro" id="packet-tracer">
+      <div class="card">
+        <h2>¿Qué es Cisco Packet Tracer?</h2>
+        <p>Cisco Packet Tracer es un simulador de redes diseñado por Cisco para practicar la creación y configuración de topologías sin necesitar hardware físico. Permite colocar routers, switches, PCs y laptops, aplicar comandos Cisco IOS y comprobar el comportamiento de la red.</p>
+        <p>Packet Tracer es una herramienta formativa que reproduce conceptos reales de redes, como direcciones IP, máscaras de subred, protocolos de enrutamiento y VLANs.</p>
+        <p>Conceptos clave:
+          <strong>Simulación</strong>: emular el funcionamiento de una red sin hardware físico.
+          <strong>Cisco IOS</strong>: sistema operativo de los equipos Cisco donde se configuran interfaces y protocolos.
+          <strong>Topología</strong>: diagrama de dispositivos y conexiones que define cómo se comunica la red.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="red-basica">
+      <div class="card">
+        <h2>¿En qué consiste una red básica?</h2>
+        <p>Una red básica conecta dispositivos finales para permitir la comunicación entre ellos. Normalmente incluye un router, un switch y equipos como una computadora y una laptop, y se configura con direcciones IP que pertenecen a la misma subred.</p>
+        <p>En Cisco Packet Tracer, una red básica permite entender cómo trabaja el router 2911, cómo el switch 2960 administra el tráfico y cómo los dispositivos finales intercambian datos.</p>
+        <p>Conceptos clave:
+          <strong>Router</strong>: dispositivo que enruta paquetes entre redes diferentes.
+          <strong>Switch</strong>: dispositivo que conmutar tramas dentro de una misma red local.
+          <strong>Subred</strong>: segmento de red con un rango de direcciones IP compartidas.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="crear-red">
+      <h2>Cómo crear una red básica en Cisco Packet Tracer</h2>
+      <p>Para crear una red básica debes combinar diseño y configuración. Primero se define la topología física, luego se eligen los equipos y finalmente se asignan las direcciones IP y las conexiones necesarias para que los dispositivos se comuniquen.</p>
+      <p>Conceptos clave:</p>
+      <ul>
+        <li><strong>Topología física</strong>: disposición de los dispositivos y cables en el área de trabajo.</li>
+        <li><strong>Direcciones IP</strong>: identificadores únicos para cada dispositivo dentro de la red.</li>
+        <li><strong>Puerto</strong>: punto de conexión en el switch o router donde se enchufa un cable.</li>
+      </ul>
+      <div class="grid">
+        <article class="topic-card">
+          <h3>1. Seleccionar los dispositivos</h3>
+          <p>En Packet Tracer agrega un Router 2911, un Switch 2960, una PC y una Laptop desde la barra de dispositivos.</p>
+        </article>
+        <article class="topic-card">
+          <h3>2. Conectar el router y el switch</h3>
+          <p>Utiliza un cable de cobre directo o de consola para conectar la interfaz del Router 2911 al Switch 2960. Esta conexión crea la ruta entre la red local y otros segmentos.</p>
+        </article>
+        <article class="topic-card">
+          <h3>3. Conectar los equipos finales</h3>
+          <p>Conecta la PC y la Laptop a puertos disponibles del Switch 2960 con cables de cobre directo. El switch permite que los equipos se comuniquen en la misma red local (LAN).</p>
+        </article>
+        <article class="topic-card">
+          <h3>4. Configurar direcciones IP</h3>
+          <p>Asigna direcciones IP a la PC y la Laptop dentro de la misma subred y configura la interfaz del router para enrutar ese segmento. Esto asegura que todos los dispositivos sepan cómo enviar datos dentro de la red.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="video">
+      <div class="card card--media">
+        <h2>Video finalizado de la red básica</h2>
+        <p>Video final: red básica finalizada con demostración de conexión exitosa entre dispositivos, envío y recepción de datos.</p>
+        <div class="media-card">
+          <div class="video-wrapper video-medium">
+            <video controls preload="metadata" src="Video/1er%20Red%20B%C3%A1sica.mp4" poster="Video/1er%20Red%20B%C3%A1sica.mp4" title="Red básica - demostración de conectividad">
+              Lo sentimos, tu navegador no soporta videos HTML5.
+            </video>
+          </div>
+          <div class="media-info">
+            <p><strong>Qué muestra:</strong></p>
+            <ul>
+              <li>Los dispositivos que muestra: Router 2911, Switch 2960, PC y Laptop.</li>
+              <li>Que están conectados con cable de cobre directo.</li>
+              <li>El envío y recepción de datos entre los dispositivos.</li>
+            </ul>
+            <p class="media-caption">Demostración: conexión exitosa entre dispositivos y envío/recepción de datos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="capturas">
+      <div class="card">
+        <h2>Capturas del ejercicio de la red básica</h2>
+        <p>En esta sección se muestran capturas de pantalla del ejercicio, con ejemplos de las conexiones, la configuración del router y del switch, y los resultados de las pruebas de red.</p>
+        <p>Estas imágenes ayudan a entender mejor cada paso y sirven como referencia visual para replicar la red en Packet Tracer.</p>
+        <div class="captures-grid">
+          <a class="capture-link" href="Capturas/1.jpg"><img src="Capturas/1.jpg" alt="Captura 1 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/2.jpg"><img src="Capturas/2.jpg" alt="Captura 2 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/3.jpg"><img src="Capturas/3.jpg" alt="Captura 3 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/4.jpg"><img src="Capturas/4.jpg" alt="Captura 4 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/5.jpg"><img src="Capturas/5.jpg" alt="Captura 5 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/6.jpg"><img src="Capturas/6.jpg" alt="Captura 6 de la red básica" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="temas" class="section section--topics">
+      <h2>Temas que veremos</h2>
+      <div class="grid">
+        <a class="topic-card" href="packet-tracer.html">
+          <h3>Packet Tracer</h3>
+          <p>Aprende qué es Cisco Packet Tracer, cómo crear topologías y usar las herramientas de simulación para ver el flujo de datos.</p>
+          <p><strong>Concepto:</strong> simulador de redes para educación y práctica de comandos Cisco IOS.</p>
+        </a>
+        <a class="topic-card" href="red-basica.html">
+          <h3>Red Básica</h3>
+          <p>Entiende la estructura de una red simple y cuál es el papel de cada dispositivo en la comunicación entre equipos.</p>
+          <p><strong>Concepto:</strong> red local con router, switch y dispositivos finales dentro de una misma subred.</p>
+        </a>
+        <a class="topic-card" href="router-2911.html">
+          <h3>Router 2911</h3>
+          <p>Descubre cómo el router enruta paquetes entre redes, configura interfaces y define gateways para los hosts.</p>
+          <p><strong>Concepto:</strong> dispositivo que conecta redes distintas y administra rutas.</p>
+        </a>
+        <a class="topic-card" href="switch-2960.html">
+          <h3>Switch 2960</h3>
+          <p>Aprende cómo el switch recibe y reenvía tramas en la LAN, usando direcciones MAC para conectar los equipos finales.</p>
+          <p><strong>Concepto:</strong> dispositivo de capa 2 que conmutar tráfico local y segmenta la red en dominios de colisión.</p>
+        </a>
+        <a class="topic-card" href="pc-laptop.html">
+          <h3>PC y Laptop</h3>
+          <p>Revisa la configuración de direcciones IP, máscara de subred y la verificación de conectividad con comandos como ping.</p>
+          <p><strong>Concepto:</strong> dispositivos finales que generan y reciben datos dentro de la red.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <!-- Lightbox para ver capturas en tamaño grande -->
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Cerrar">✕</button>
+    <img src="" alt="" class="lightbox-img">
+  </div>
+
+  <script>
+    (function(){
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = lightbox.querySelector('.lightbox-img');
+      const closeBtn = lightbox.querySelector('.lightbox-close');
+
+      function openLightbox(src, alt){
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || '';
+        lightbox.classList.remove('hidden');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox(){
+        lightbox.classList.add('hidden');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.capture-link').forEach(link => {
+        link.addEventListener('click', function(e){
+          e.preventDefault();
+          const img = this.querySelector('img');
+          openLightbox(link.href, img.alt);
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', function(e){
+        if(e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+      });
+    })();
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
