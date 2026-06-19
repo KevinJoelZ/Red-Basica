@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrutamiento Estático - Manejo de Redes Avanzadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Manejo de Redes <span class="logo__tracer">Avanzadas</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="enrutamiento-rip2.html">RIP v2</a></li>
+        <li><a class="nav__link" href="enrutamiento-ospf.html">OSPF</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Enrutamiento Estático</p>
+      <h1 class="hero__title">Rutas manuales para conectar redes</h1>
+      <p class="hero__subtitle">El enrutamiento estático permite configurar rutas fijas en los routers para definir cómo se envía el tráfico entre segmentos de red.</p>
+      <a class="button" href="#contenido">Ver contenido</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--intro" id="contenido">
+      <div class="card">
+        <h2>¿Qué es el enrutamiento estático?</h2>
+        <p>El enrutamiento estático es un método en el que el administrador configura manualmente rutas en el router. Estas rutas no cambian automáticamente y se utilizan cuando la topología de red es simple o cuando se desea control total sobre el camino de los paquetes.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Ventajas y desventajas</h2>
+        <ul>
+          <li><strong>Ventajas:</strong> configuraciones fáciles, menos recursos de CPU en el router y mayor control sobre las rutas.</li>
+          <li><strong>Desventajas:</strong> no se adapta automáticamente a cambios de red y requiere actualización manual en cada router.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Ejemplo de configuración</h2>
+        <p>Imagina dos routers conectados y dos redes detrás de ellos. La ruta estática permite que cada router sepa cómo alcanzar la red remota.</p>
+        <pre>
+configure terminal
+ip route 192.168.2.0 255.255.255.0 10.0.0.2
+end
+        </pre>
+        <p>Donde:</p>
+        <ul>
+          <li><strong>192.168.2.0 255.255.255.0</strong> es la red destino.</li>
+          <li><strong>10.0.0.2</strong> es la dirección IP del siguiente salto o vecino.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Verificación</h2>
+        <p>Después de configurar una ruta estática, comprueba su funcionamiento con:</p>
+        <pre>
+show ip route
+ping 192.168.2.1
+        </pre>
+        <p>El comando <code>show ip route</code> mostrará la ruta estática en la tabla de enrutamiento, y <code>ping</code> ayudará a validar la conectividad.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

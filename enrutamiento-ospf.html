@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrutamiento OSPF - Manejo de Redes Avanzadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Manejo de Redes <span class="logo__tracer">Avanzadas</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="enrutamiento-estatico.html">Estático</a></li>
+        <li><a class="nav__link" href="enrutamiento-rip2.html">RIP v2</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">OSPF</p>
+      <h1 class="hero__title">Protocolo de enrutamiento de estado de enlace</h1>
+      <p class="hero__subtitle">OSPF es un protocolo dinámico de enrutamiento recomendado para redes grandes, con áreas y convergencia rápida.</p>
+      <a class="button" href="#contenido">Ver contenido</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--intro" id="contenido">
+      <div class="card">
+        <h2>¿Qué es OSPF?</h2>
+        <p>OSPF (Open Shortest Path First) es un protocolo de enrutamiento de estado de enlace que crea un mapa completo de la topología de la red y calcula la ruta más corta utilizando el algoritmo SPF.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Conceptos clave</h2>
+        <ul>
+          <li><strong>Área:</strong> división lógica de la red para escalar OSPF y reducir la cantidad de información de enrutamiento.</li>
+          <li><strong>Router vecino:</strong> routers que intercambian información OSPF en una misma red.</li>
+          <li><strong>Base de datos LSDB:</strong> almacena información de los enlaces y topología OSPF.</li>
+          <li><strong>Algoritmo SPF:</strong> calcula la ruta más corta a partir de la información de la LSDB.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Configuración básica en Cisco IOS</h2>
+        <pre>
+enable
+configure terminal
+router ospf 1
+network 192.168.1.0 0.0.0.255 area 0
+network 192.168.2.0 0.0.0.255 area 0
+end
+        </pre>
+        <p>Con estos comandos, el router anunciará las redes dentro del área 0 y establecerá relaciones de vecino con otros routers OSPF.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Verificación de OSPF</h2>
+        <p>Utiliza estos comandos para revisar el estado de OSPF y las rutas aprendidas:</p>
+        <pre>
+show ip ospf neighbor
+show ip route ospf
+show ip ospf database
+        </pre>
+        <p>Estos comandos ayudan a validar que OSPF ha formado adyacencias y que las rutas internas se han propagado correctamente.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

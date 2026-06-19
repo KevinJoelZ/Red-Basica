@@ -9,41 +9,163 @@
 <body>
   <header class="hero" id="inicio">
     <nav class="nav">
-      <a class="logo" href="index.html">Red Básica Packet <span class="logo__tracer">Tracer</span></a>
+      <a class="logo" href="index.html">Manejo de Redes <span class="logo__tracer">Avanzadas</span></a>
       <ul class="nav__list">
         <li><a class="nav__link" href="index.html">Inicio</a></li>
-        <li><a class="nav__link" href="packet-tracer.html">Packet Tracer</a></li>
-        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
-        <li><a class="nav__link" href="crear-red.html">Cómo Crear</a></li>
-        <li><a class="nav__link" href="index.html#video">Video Finalizado</a></li>
-        <li><a class="nav__link" href="index.html#capturas">Capturas de Ejercicio</a></li>
         <li><a class="nav__link" href="index.html#temas">Temas</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
       </ul>
     </nav>
     <div class="hero__content">
       <p class="hero__eyebrow">Red Básica</p>
-      <h1 class="hero__title">Qué es una red básica en Packet Tracer</h1>
-      <p class="hero__subtitle">Una red básica conecta dispositivos como routers, switches y equipos finales para permitir el intercambio de datos. Aprende los elementos principales y la lógica de diseño de esta topología.</p>
+      <h1 class="hero__title">Todo sobre la red básica en una sola página</h1>
+      <p class="hero__subtitle">Esta página contiene la red básica unificada con Packet Tracer, configuración de Router 2911, Switch 2960, PC, Laptop y más.</p>
       <a class="button" href="index.html">Volver a la página principal</a>
     </div>
   </header>
+
   <main class="container">
     <section class="section section--topic">
       <div class="card">
-        <h2>Componentes de una red simple</h2>
-        <p>En una red básica encontramos un router, un switch y dispositivos finales como una PC y una laptop. Estos componentes trabajan juntos para enrutar y conmutar paquetes dentro de una misma subred.</p>
+        <h2>Red Básica</h2>
+        <p>Una red básica conecta dispositivos finales para permitir la comunicación entre ellos. Normalmente incluye un router, un switch y equipos como una computadora y una laptop, y se configura con direcciones IP que pertenecen a la misma subred.</p>
+        <p>En Cisco Packet Tracer, una red básica permite entender cómo trabaja el Router 2911, cómo el Switch 2960 administra el tráfico y cómo los dispositivos finales intercambian datos.</p>
         <p>Conceptos clave:</p>
         <ul>
-          <li><strong>Router:</strong> dispositivo que conecta redes diferentes y toma decisiones de encaminamiento.</li>
-          <li><strong>Switch:</strong> conmutador de capa 2 que envía tramas a partir de direcciones MAC dentro de la LAN.</li>
-          <li><strong>Host:</strong> equipo final, como una PC o laptop, que envía y recibe datos.</li>
-          <li><strong>Subred:</strong> segmento de red definido por una máscara de subred y un rango de direcciones IP.</li>
+          <li><strong>Router</strong>: dispositivo que enruta paquetes entre redes diferentes.</li>
+          <li><strong>Switch</strong>: dispositivo que conmutar tramas dentro de una misma red local.</li>
+          <li><strong>Subred</strong>: segmento de red con un rango de direcciones IP compartidas.</li>
         </ul>
-        <p>La red básica también permite estudiar cómo se asignan direcciones IP y cómo los paquetes se mueven entre dispositivos con ayuda del switch y del router.</p>
-        <p>En Cisco Packet Tracer, esta topología es útil para practicar conexiones físicas, configuración de interfaces y pruebas de conectividad.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="packet-tracer">
+      <div class="card">
+        <h2>Packet Tracer</h2>
+        <p>Cisco Packet Tracer es un simulador de redes diseñado por Cisco para practicar la creación y configuración de topologías sin necesitar hardware físico. Permite colocar routers, switches, PCs y laptops, aplicar comandos Cisco IOS y comprobar el comportamiento de la red.</p>
+        <p>Packet Tracer es una herramienta formativa que reproduce conceptos reales de redes, como direcciones IP, máscaras de subred, protocolos de enrutamiento y VLANs.</p>
+        <p>¿Qué se puede hacer con Packet Tracer?</p>
+        <ul>
+          <li>Crear topologías completas con routers, switches, PCs, laptops, servidores y otros dispositivos.</li>
+          <li>Configurar interfaces, direcciones IP, VLANs, enrutamiento estático y dinámico, y seguridad básica.</li>
+          <li>Simular tráfico entre dispositivos y comprobar la comunicación con comandos como <code>ping</code> y <code>traceroute</code>.</li>
+          <li>Practicar el uso de comandos Cisco IOS, acceso remoto y administración de redes.</li>
+          <li>Guardar proyectos y regresar a ellos para seguir aprendiendo o mejorando la configuración.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="crear-red">
+      <div class="card">
+        <h2>Cómo Crear la Red</h2>
+        <p>Para crear una red básica debes combinar diseño y configuración. Primero se define la topología física, luego se eligen los equipos y finalmente se asignan las direcciones IP y las conexiones necesarias para que los dispositivos se comuniquen.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Topología física</strong>: disposición de los dispositivos y cables en el área de trabajo.</li>
+          <li><strong>Tipos de cable</strong>: cobre directo para conectar PCs y switch, y cable cruzado cuando se conecta un router a otro router o equipo similar.</li>
+          <li><strong>Puerta de enlace</strong>: dirección IP del router que permite a los hosts salir de su subred.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="router-2911">
+      <div class="card">
+        <h2>Router 2911</h2>
+        <p>El Router 2911 actúa como el punto de salida de la red local y la puerta de enlace para los hosts. Su configuración inicial implica habilitar interfaces y asignar direcciones IP.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Interfaz:</strong> puerto del router donde se conecta un cable y se configura una dirección IP.</li>
+          <li><strong>IP de gateway:</strong> dirección utilizada por los hosts para enviar tráfico fuera de su subred.</li>
+          <li><strong>CLI:</strong> línea de comandos de Cisco IOS usada para configurar el router.</li>
+        </ul>
+        <p>Ejemplo de comandos básicos en la CLI:</p>
+        <pre>
+enable
+configure terminal
+interface GigabitEthernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+        </pre>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="switch-2960">
+      <div class="card">
+        <h2>Switch 2960</h2>
+        <p>El Switch 2960 actúa como el centro de conmutación de la LAN. Su función principal es recibir tramas y reenviarlas al puerto correcto según la dirección MAC de destino.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Tabla MAC:</strong> lista que el switch construye para saber en qué puerto está cada dirección MAC.</li>
+          <li><strong>VLAN:</strong> red virtual que permite segmentar el tráfico dentro de un mismo switch.</li>
+          <li><strong>Dominio de colisión:</strong> área de la red donde los paquetes pueden chocar, reducida por el uso de switches.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="pc-laptop">
+      <div class="card">
+        <h2>PC y Laptop</h2>
+        <p>La PC y la laptop son los dispositivos finales de la red. Para comunicarse correctamente, cada uno debe tener una dirección IP única en la misma subred y apuntar a la puerta de enlace correcta.</p>
+        <p>Conceptos clave:</p>
+        <ul>
+          <li><strong>Dirección IP:</strong> identificador lógico que permite ubicar el dispositivo en la red.</li>
+          <li><strong>Máscara de subred:</strong> define qué parte de la IP corresponde a la red y qué parte a los hosts.</li>
+          <li><strong>Puerta de enlace predeterminada:</strong> dirección IP del router que se usa para salir de la red local.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="video">
+      <div class="card card--media">
+        <h2>Video finalizado de la red básica</h2>
+        <p>Video final: red básica finalizada con demostración de conexión exitosa entre dispositivos, envío y recepción de datos.</p>
+        <div class="media-card">
+          <div class="video-wrapper video-medium">
+            <video controls preload="metadata" src="Video/1er Red Básica.mp4" poster="Video/1er Red Básica.mp4" title="Red básica - demostración de conectividad">
+              Lo sentimos, tu navegador no soporta videos HTML5.
+            </video>
+          </div>
+          <div class="media-info">
+            <p><strong>Qué muestra:</strong></p>
+            <ul>
+              <li>Los dispositivos que muestra: Router 2911, Switch 2960, PC y Laptop.</li>
+              <li>Que están conectados con cable de cobre directo.</li>
+              <li>El envío y recepción de datos entre los dispositivos.</li>
+            </ul>
+            <p class="media-caption">Demostración: conexión exitosa entre dispositivos y envío/recepción de datos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--topic" id="capturas">
+      <div class="card">
+        <h2>Capturas del ejercicio de la red básica</h2>
+        <p>En esta sección se muestran capturas de pantalla del ejercicio, con ejemplos de las conexiones, la configuración del router y del switch, y los resultados de las pruebas de red.</p>
+        <p>Estas imágenes ayudan a entender mejor cada paso y sirven como referencia visual para replicar la red en Packet Tracer.</p>
+        <div class="captures-grid">
+          <a class="capture-link" href="Capturas/1.jpeg"><img src="Capturas/1.jpeg" alt="Captura 1 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/2.jpeg"><img src="Capturas/2.jpeg" alt="Captura 2 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/3.jpeg"><img src="Capturas/3.jpeg" alt="Captura 3 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/4.jpeg"><img src="Capturas/4.jpeg" alt="Captura 4 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/5.jpeg"><img src="Capturas/5.jpeg" alt="Captura 5 de la red básica" loading="lazy"></a>
+          <a class="capture-link" href="Capturas/6.jpeg"><img src="Capturas/6.jpeg" alt="Captura 6 de la red básica" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="temas" class="section section--topics">
+      <h2>Temas que veremos</h2>
+      <div class="grid">
+        <a class="topic-card" href="index.html#temas">
+          <h3>Volver a la página principal</h3>
+          <p>Regresa al portal principal para seleccionar otro tema del curso.</p>
+        </a>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
   </footer>

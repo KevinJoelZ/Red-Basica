@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrutamiento RIP v2 - Manejo de Redes Avanzadas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <a class="logo" href="index.html">Manejo de Redes <span class="logo__tracer">Avanzadas</span></a>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Inicio</a></li>
+        <li><a class="nav__link" href="red-basica.html">Red Básica</a></li>
+        <li><a class="nav__link" href="enrutamiento-estatico.html">Estático</a></li>
+        <li><a class="nav__link" href="enrutamiento-ospf.html">OSPF</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <p class="hero__eyebrow">RIP versión 2</p>
+      <h1 class="hero__title">Enrutamiento dinámico con RIP v2</h1>
+      <p class="hero__subtitle">RIP v2 es un protocolo de enrutamiento dinámico que comparte rutas entre routers en redes pequeñas y medianas.</p>
+      <a class="button" href="#contenido">Ver contenido</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section section--intro" id="contenido">
+      <div class="card">
+        <h2>¿Qué es RIP v2?</h2>
+        <p>RIP versión 2 es un protocolo de vector de distancia que usa la métrica de saltos para determinar la mejor ruta. Envía actualizaciones periódicas de su tabla de enrutamiento a los vecinos mediante broadcasts o multicasts.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Características principales</h2>
+        <ul>
+          <li>Utiliza el conteo de saltos (hop count) como métrica.</li>
+          <li>Soporta máscaras de subred de longitud variable (VLSM).</li>
+          <li>Envía actualizaciones cada 30 segundos.</li>
+          <li>Soporta autenticación simple en versiones extendidas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Configuración básica en Cisco IOS</h2>
+        <pre>
+enable
+configure terminal
+router rip
+version 2
+network 192.168.1.0
+network 192.168.2.0
+no auto-summary
+end
+        </pre>
+        <p>Con estos comandos, el router comenzará a anunciar las redes configuradas a sus vecinos usando RIP v2.</p>
+      </div>
+    </section>
+
+    <section class="section section--topic">
+      <div class="card">
+        <h2>Verificación de RIP</h2>
+        <p>Para comprobar que RIP está funcionando correctamente, usa los siguientes comandos:</p>
+        <pre>
+show ip protocols
+show ip route
+show ip rip database
+        </pre>
+        <p>Estas órdenes muestran el estado del protocolo, la tabla de rutas aprendidas por RIP y la base de datos de rutas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Todos los derechos reservados. Tecnólogo Kevin Zapata. Itecsur. 2026</p>
+  </footer>
+  <div class="jump-buttons" aria-label="Navegación rápida">
+    <button type="button" data-target="top" title="Ir al inicio">↑</button>
+    <button type="button" data-target="middle" title="Ir a la mitad">•</button>
+    <button type="button" data-target="bottom" title="Ir al final">↓</button>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
